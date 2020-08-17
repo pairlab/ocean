@@ -12,7 +12,7 @@ def mass_center(model, sim):
 @register_env('humanoid-multi-goal')
 class HumanoidMultiGoalEnv(HumanoidEnv):
 
-    def __init__(self, task={}, n_tasks=2, randomize_tasks=True, n_dirs=3, radius=4, max_eps=700, seed=0):
+    def __init__(self, task={}, n_tasks=2, randomize_tasks=True, n_dirs=3, radius=4, max_eps=500, seed=0):
         self._max_eps = max_eps
         self._radius = radius
         self._num_steps = 0

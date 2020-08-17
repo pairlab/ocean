@@ -1,0 +1,26 @@
+{
+    "env_name": "cheetah-multi-dir-complex",
+    "log_name": "cheetah-multi-dir-complex",
+    "n_train_tasks": 12,
+    "n_eval_tasks": 4,
+    "env_params": {
+        "n_tasks": 16,
+        "max_eps": 500
+    }
+    ,
+    "algo_params": {
+        "meta_batch": 10,
+        "num_tasks_sample": 10,
+        "num_initial_steps": 2000,
+        "num_steps_prior": 500,
+        "num_steps_posterior": 0,
+        "num_extra_rl_steps_posterior": 700,
+        "max_path_length": 500,
+        "num_iterations": 2000,
+        "num_evals": 1,
+        "num_steps_per_eval": 2000,
+        "num_exp_traj_eval": 1,
+        "embedding_batch_size": 256,
+        "embedding_mini_batch_size": 256
+    }
+}

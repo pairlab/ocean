@@ -12,7 +12,7 @@ def mass_center(model, sim):
 @register_env('humanoid-multi-dir')
 class HumanoidMultiDirEnv(HumanoidEnv):
 
-    def __init__(self, task={}, n_tasks=2, randomize_tasks=True, n_dirs=3, max_eps=700, seed=0):
+    def __init__(self, task={}, n_tasks=2, randomize_tasks=True, n_dirs=3, max_eps=500, seed=0):
         self._max_eps = max_eps
         self._num_steps = 0
         self.tasks = self.sample_tasks(n_tasks, n_dirs)
