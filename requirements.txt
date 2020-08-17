@@ -1,5 +1,5 @@
 atari-py==0.1.7
-bleach==3.1.0
+bleach==3.1.4
 chardet==3.0.4
 click==7.0
 cloudpickle==0.5.2
