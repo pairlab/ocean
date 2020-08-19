@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+## OCEAN: Online Task Inference for Compositional Tasks with Context Adaptation
 
-You can use the [editor on GitHub](https://github.com/pairlab/ocean/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Abstract
+Real-world tasks often exhibit a compositional structure that contains a sequence of simpler sub-tasks. For instance, opening a door requires reaching, grasping, rotating, and pulling the door knob. Such compositional tasks require an agent to reason about the sub-task at hand while orchestrating global behavior accordingly. This can be cast as an online task inference problem, where the current task identity, represented by a context variable, is estimated from the agent's past experiences with probabilistic inference. Previous approaches have employed simple latent distributions, e.g., Gaussian, to model a single context for the entire task. However, this formulation lacks the expressiveness to capture the composition and transition of the sub-tasks. We propose a variational inference framework OCEAN to perform online task inference for compositional tasks. OCEAN models global and local context variables in a joint latent space, where the global variables represent a mixture of sub-tasks required for the task, while the local variables capture the transitions between the sub-tasks. Our framework supports flexible latent distributions based on prior knowledge of the task structure and can be trained in an unsupervised manner. Experimental results show that OCEAN provides more effective task inference with sequential context adaptation and thus leads to a performance boost on complex, multi-stage tasks
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Contributors and Contact
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+[Hongyu Ren](http://hyren.me/), [Yuke Zhu](https://www.cs.utexas.edu/~yukez/), [Jure Leskovec](https://cs.stanford.edu/people/jure/), [Anima Anandkumar](http://tensorlab.cms.caltech.edu/users/anima/), [Animesh Garg](http://animesh.garg.tech/). 
+For questions, please email: [hyren@cs.stanford.edu](mailto:hyren@cs.stanford.edu) and [garg@cs.toronto.edu](mailto:garg@cs.toronto.edu)
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/pairlab/ocean/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
